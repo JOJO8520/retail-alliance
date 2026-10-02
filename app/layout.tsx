@@ -1,3 +1,3 @@
 import "./globals.css"; import {WalletProvider} from "@/components/WalletProvider"; import {Nav} from "@/components/Nav";
-export const metadata={title:"RETAIL ALLIANCE | 散户联盟",description:"一个人是散户，一群人就是社区。"};
+export const metadata={title:"RETAIL ALLIANCE | 散户联盟",description:"一个人是散户，一群人就是社区"};
 export default function Layout({children}:{children:React.ReactNode}){return <html lang="zh-CN"><body className="scanlines"><WalletProvider><Nav/><main className="min-h-screen">{children}</main><footer className="border-t border-white/10 py-10"><div className="mx-auto max-w-6xl px-5 flex justify-between"><div><b>RETAIL ALLIANCE</b><div className="muted text-sm">散户联盟 · 我们就是散户</div></div><a className="btn" target="_blank" rel="noreferrer" href={process.env.NEXT_PUBLIC_TELEGRAM_URL||"https://t.me/+5jtSQzBzLFk3Mzc1"}>Telegram 社区</a></div></footer></WalletProvider></body></html>}
