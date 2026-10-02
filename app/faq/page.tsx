@@ -1,0 +1,1 @@
+export default function FAQ(){return <section className="mx-auto max-w-6xl px-5 py-20"><h1 className="text-4xl font-black">FAQ</h1><div className="panel rounded-2xl p-6 mt-8"><b>钱包登录安全吗？</b><p className="muted mt-2">只用于身份验证，不要求私钥或助记词，也不执行转账和代币授权。</p></div></section>}

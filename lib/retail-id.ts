@@ -1,0 +1,1 @@
+import crypto from "crypto"; export function makeRetailId(w:string){return "RETAIL #"+crypto.createHash("sha256").update(w.toLowerCase()).digest("hex").slice(0,6).toUpperCase()}

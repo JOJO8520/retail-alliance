@@ -1,0 +1,1 @@
+export default function Community(){return <section className="mx-auto max-w-6xl px-5 py-20"><h1 className="text-4xl font-black">加入社区</h1><p className="muted mt-4">加入散户联盟官方 Telegram 社区。</p><a className="btn btn-primary mt-8" target="_blank" rel="noreferrer" href={process.env.NEXT_PUBLIC_TELEGRAM_URL||"https://t.me/+5jtSQzBzLFk3Mzc1"}>加入 Telegram 社区</a></section>}

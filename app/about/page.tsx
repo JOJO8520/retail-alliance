@@ -1,0 +1,1 @@
+export default function About(){return <section className="mx-auto max-w-6xl px-5 py-20"><h1 className="text-4xl font-black">关于我们</h1><p className="muted max-w-2xl mt-5 leading-8">RETAIL ALLIANCE 是一个围绕社区身份、签到和 Meme 共创建立的数字社区网站。</p></section>}

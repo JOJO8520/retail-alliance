@@ -1,0 +1,34 @@
+generator client { provider = "prisma-client-js" }
+datasource db { provider = "postgresql" url = env("DATABASE_URL") }
+model User {
+ id String @id @default(cuid())
+ wallet String @unique
+ retailId String @unique
+ joinedAt DateTime @default(now())
+ lastCheckIn DateTime?
+ streak Int @default(0)
+ checkIns CheckIn[]
+ posts MemePost[]
+}
+model CheckIn {
+ id String @id @default(cuid())
+ userId String
+ date String
+ createdAt DateTime @default(now())
+ user User @relation(fields:[userId], references:[id], onDelete:Cascade)
+ @@unique([userId,date])
+}
+model MemePost {
+ id String @id @default(cuid())
+ userId String
+ content String
+ createdAt DateTime @default(now())
+ user User @relation(fields:[userId], references:[id], onDelete:Cascade)
+}
+model Nonce {
+ id String @id @default(cuid())
+ wallet String
+ nonce String @unique
+ expiresAt DateTime
+ createdAt DateTime @default(now())
+}

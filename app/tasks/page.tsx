@@ -1,0 +1,1 @@
+export default function Tasks(){return <section className="mx-auto max-w-6xl px-5 py-20"><h1 className="text-4xl font-black">每日任务</h1><div className="panel rounded-2xl p-8 mt-8 muted">暂无任务数据。</div></section>}
